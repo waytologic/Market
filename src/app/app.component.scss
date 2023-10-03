@@ -1,0 +1,25 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar .bg-green{
+  background: linear-gradient(to top, #166b00, #167a02, #158a04, #129a08, #09ab0e);
+}
+
+.mat-toolbar.mat-primary {
+  background: linear-gradient(to top, #166b00, #167a02, #158a04, #129a08, #09ab0e) !important;
+  color: #fff;
+}
+
+.main-body {
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 1348px;
+  mat-form-field {
+    width: 100%;
+  }
+}
+
+.action {
+  display: flex;
+  gap: 5px;
+}

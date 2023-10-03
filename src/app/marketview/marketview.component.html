@@ -1,0 +1,101 @@
+<mat-toolbar color="primary">
+  <span><i class="fa-sharp fa-solid fa-chart-mixed" style="color: #ffffff;"></i> &nbsp;Stock Market</span>
+  <span class="example-spacer"></span>
+  <button class="btn btn-success" mat-raised-button routerLink="/">
+    Back
+  </button>
+</mat-toolbar>
+<div class="container">
+
+  <div class="row m-4">
+    <mat-card class="example-card shadow">
+      <mat-card-header>
+        <mat-card-title> <i class="fa-duotone fa-calendar-days fa-xl" style="--fa-primary-color: #126f06; --fa-secondary-color: #4b9325; --fa-secondary-opacity: 0.8;"></i> &nbsp; <b> {{ this.allview.dates | date }} </b></mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="row">
+          <div class="pricecard">
+            <div class="head">
+              <h2>Open Price</h2>
+              <p class="price"><b>{{ this.allview.open_price}}</b></p>
+            </div>
+          </div>
+          <div class="pricecard">
+            <div class="head">
+              <h2>Close Price</h2>
+              <p class="price"><b>{{ this.allview.close_price}}</b></p>
+            </div>
+          </div>
+          <div class="pricecard">
+            <div class="head">
+              <h2>High Price</h2>
+              <p class="price"><b>{{ this.allview.high_price}}</b></p>
+            </div>
+          </div>
+          <div class="pricecard">
+            <div class="head">
+              <h2>Low Price</h2>
+              <p class="price"><b>{{ this.allview.low_price}}</b></p>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+
+    </mat-card>
+    <div>&nbsp;</div>
+    <mat-card class="example-card shadow">
+      <mat-card-header>
+        <mat-card-title>
+          Expanded Floor Pivots
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col">
+              <h2>Pivot :  <b>{{this.Pivot}}</b></h2>
+            </div>
+            <div class="col">
+              <h2>BC :  <b>{{this.BC}}</b></h2>
+            </div>
+            <div class="col">
+              <h2>TC :  <b>{{ this.TC }}</b></h2>
+            </div>
+            <div class="col">
+             &nbsp;
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <h2>R1 :  <b>{{this.R1}}</b></h2>
+            </div>
+            <div class="col">
+              <h2>R2 :  <b>{{this.R2}}</b></h2>
+            </div>
+            <div class="col">
+              <h2>R3 :  <b>{{ this.R3 }}</b></h2>
+            </div>
+            <div class="col">
+              <h2>R4 :  <b>{{ this.R4 }}</b></h2>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <h2>S1 :  <b>{{this.S1}}</b></h2>
+            </div>
+            <div class="col">
+              <h2>S2 :  <b>{{this.S2}}</b></h2>
+            </div>
+            <div class="col">
+              <h2>S3 :  <b>{{ this.S3 }}</b></h2>
+            </div>
+            <div class="col">
+              <h2>S4 :  <b>{{ this.S4 }}</b></h2>
+            </div>
+          </div>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,88 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar .bg-green{
+  background: linear-gradient(to top, #166b00, #167a02, #158a04, #129a08, #09ab0e);
+}
+.mat-toolbar.mat-primary {
+  background: linear-gradient(to top, #166b00, #167a02, #158a04, #129a08, #09ab0e) !important;
+  color: #fff;
+}
+.pricecard {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width:25%;
+  min-width: 250px;
+}
+.pricecard h2 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.pricecard .sub {
+  line-height: 1.25;
+}
+.pricecard:nth-of-type(1) .head {
+  background-image: conic-gradient(
+    at center top,
+    rgb(0, 89, 255),
+    rgb(0, 4, 255),
+    rgb(11, 0, 159)
+  );
+}
+
+.pricecard:nth-of-type(2) .head {
+  background-image: conic-gradient(
+    at center top,
+    rgb(134, 239, 172),
+    rgb(59, 130, 246),
+    rgb(147, 51, 234)
+  );
+}
+
+.pricecard:nth-of-type(3) .head {
+  background-image: conic-gradient(
+    at center top,
+    rgb(224, 169, 38),
+    rgb(138, 55, 217),
+    rgb(89, 130, 246)
+  );
+}
+
+.pricecard:nth-of-type(4) .head {
+  background-image: conic-gradient(
+    at center top,
+    rgba(38, 224, 57, 0.38),
+    rgb(9, 176, 17),
+    rgb(135, 250, 4)
+  );
+}
+.pricecard .head {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease-in-out;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.pricecard .head:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 5px 7px -6px rgba(0, 0, 0, 0.08),
+    0px 8px 13.5px -6px rgba(0, 0, 0, 0.12),
+    0px 16px 36px -6px rgba(0, 0, 0, 0.15);
+}
+
+.pricecard .price {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: auto;
+  line-height: 0.85;
+}
